@@ -7,7 +7,12 @@ clear all
 %   TD.x: x-address (1 to 304 for ATIS)
 %   TD.y: y-address (1 to 240 for ATIS)
 %   TD.ts: timestamp in microseconds
-source_file = 'TD';
+source_file = 'input_data';
+
+%if the file doesn't exist, get the example data from Garrick's dropbox
+if ~exist('input_data.mat', 'file')
+    !wget -O input_data.mat https://www.dropbox.com/s/3dnjjh5sv5qi1ss/Recording.mat
+end
 
 % pre_processing parameters
 pre_process_params.noise_filter_threshold = []; %should probably be 1/max_velocity
@@ -29,7 +34,7 @@ output_format_params.maxval = 40000; %corresponds to min speed of 25 pixels per 
 addpath(genpath('.')); % add functions to the path
 
 %add the matlab aer vision functions to the path
-addpath(genpath('../Matlab_AER_vision_functions')); % add functions to the path
+addpath(genpath('Matlab_AER_vision_functions')); % add functions to the path
 if ~exist('FilterTD', 'file')
     error('Matlab AER functions not found, please make sure to download the latest version from http://www.garrickorchard.com/code/matlab-AER-functions \n and add them to your path');
 end
