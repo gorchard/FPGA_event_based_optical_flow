@@ -2,7 +2,11 @@
 
 This repository contains code supporting an ISCAS 2018 paper (to be linked once published).
 
-An example of the code in action can be found at https://www.youtube.com/edit?o=U&video_id=86VnBYzJHFQ 
+An example of the code in action can be found at
+* Input data used by this repo: [Rotating Bar Video](https://youtu.be/uI0BoMI96kI)
+* [Resulting direction](https://youtu.be/sE-xBcOgiY4)
+* [Resulting speed](https://youtu.be/kVjdE0-t4u0)
+* [Live screengrab of FPGA results from handheld sensor](https://www.youtube.com/edit?o=U&video_id=86VnBYzJHFQ)
 
 ### Folders ###
 * Under the VHDL folder you will find code for the module (implementation) and code for simulating each module (simulation)
