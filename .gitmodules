@@ -1,0 +1,3 @@
+[submodule "Matlab/Matlab_AER_vision_functions"]
+	path = Matlab/Matlab_AER_vision_functions
+	url = git@github.com:gorchard/Matlab_AER_vision_functions.git
