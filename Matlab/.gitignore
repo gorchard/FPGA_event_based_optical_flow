@@ -1,0 +1,3 @@
+#Gitignore for top level project
+ground_truth/
+*.mat

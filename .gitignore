@@ -1,0 +1,23 @@
+#ignore these generated directories
+VHDL/iseconfig/
+VHDL/working_dir/
+
+#ignore simulation data since it can be large
+VHDL/simulation/data/
+
+#for each module, don't keep the generated ipcore files
+**/ip_core/**
+!**.xise
+!**.xco
+!**.coe
+
+#ignore matlab files
+**.mat
+
+#ignore simulation data files
+**.val
+**.dat
+**.gise
+
+#ignore temporary files
+**~
