@@ -19,6 +19,9 @@ An example of the code in action can be found at
 * The code allows full precision simulations to be compared to VHDL simulations to investigate any loss of accuracy.
 * To verify the VHDL simulations, they need to be run one at a time. Each simulation module uses the output of the previous simulation module as input.
 
+### Known Issues ###
+* The divider in the format_output.vhd module does not simulate correctly on our CentOS 7 machine. No errors are thrown, but the outputs are incorrect. The simulation works correctly on our Windows 7 machines.
+
 ### Who do I talk to? ###
 
 * Garrick Orchard (garrickorchard@gmail.com)
