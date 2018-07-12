@@ -79,7 +79,7 @@ end
 
 %extract the velocities from the plane fit results
 output = format_output(result, output_format_params);
-
+save output output
 %% show output
 %magnitude
 speed = output;

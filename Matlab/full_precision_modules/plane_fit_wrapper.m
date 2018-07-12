@@ -8,6 +8,7 @@ A_back = [x(:),y(:),ones(9,1)];
 num_items = length(fit_arbiter.x);
 result.a = zeros(1,num_items);
 result.b = zeros(1,num_items);
+result.c = zeros(1,num_items);
 result.x = zeros(1,num_items);
 result.y = zeros(1,num_items);
 result.ii = zeros(1,num_items);
@@ -59,6 +60,7 @@ for ii = 1:num_items
         if num_INvalid_pixels == 0
             result.a(result_index) = x(1);
             result.b(result_index) = x(2);
+            result.c(result_index) = x(3);
             result.x(result_index) = fit_arbiter.x(ii);
             result.y(result_index) = fit_arbiter.y(ii);
             result.ii(result_index) = ii;
@@ -90,6 +92,7 @@ refit.ts(refit_index:end) = [];
 
 result.a(result_index:end) = [];
 result.b(result_index:end) = [];
+result.c(result_index:end) = [];
 result.x(result_index:end) = [];
 result.y(result_index:end) = [];
 result.ii(result_index:end) = [];
@@ -99,3 +102,4 @@ result.ts(result_index:end) = [];
 %must also negate a and b)
 result.a = -result.a;
 result.b = -result.b;
+result.c = -result.c;
