@@ -1,6 +1,7 @@
 # FPGA optical flow for event-based sensors #
 
 This repository contains code supporting an ISCAS 2018 paper:
+
 Tun Aung, M.; Teo, R.; and Orchard, G.; “Event-based Plane-fitting Optical Flow for Dynamic Vision Sensors in FPGA” IEEE Int. Symp. Circuits Syst., Florence, Italy, May 2018
 https://ieeexplore.ieee.org/document/8351588/
 
